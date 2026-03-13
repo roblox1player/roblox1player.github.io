@@ -1,0 +1,77 @@
+<style>
+ /* idk what im doing this was writen by ai(the @property and keyframes) */
+ @property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --negangle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate { /* so this is just an animation that rotates it from 0 deg to 360 ok hm */
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes negrotate { /* so maybe this is counter clockwize i made it that so maybe it would work */
+ from {
+   --negangle: 360deg;
+ }
+ to {
+   --negangle: 0deg;
+ }
+}
+ 
+ .container {
+ border:3px solid;
+ border-color:black;
+ padding:20px;
+ max-width:650px;
+ border-radius:15px;
+ text-align:center;
+ margin:250px auto;
+ background: linear-gradient(var(--negangle), #b566ff 0%, #5c5ef7 100%);
+ animation: negrotate 1s linear infinite; /* just copied that okay */
+ }
+ 
+ .idk img {
+  width:250px;
+  height:auto;
+ }
+
+body {
+  font-family: Montserrat, sans-serif;
+  background: linear-gradient(var(--angle), #0307fc 0%, #8403fc 100%);
+  margin: 0;            
+  min-height: 100vh;  
+  animation: rotate 1s linear infinite;  
+}
+ 
+ h1 {
+ font-size:35px;
+ text-align:center;
+ margin:30px auto;
+}
+ 
+ h1:hover {
+  color:white
+  }
+  
+  a {
+   color:black;
+   text-decoration: none;
+  }
+ 
+   a:hover {
+            text-decoration:underline;
+            color:white;
+        }
+</style>
