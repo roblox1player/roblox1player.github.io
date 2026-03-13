@@ -29,6 +29,24 @@
    --negangle: 0deg;
  }
 }
+
+.play-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+button {
+    background: linear-gradient(var(--angle), #6a5acd, #483d8b); /* gradient background */
+    border: none;                          /* remove default border */
+    color: white;                           /* text color */
+    padding: 12px 24px;                     /* space inside button */
+    font-size: 18px;                         /* text size */
+    font-family: 'Montserrat', sans-serif;	/* match your font */
+	border-radius:15px;
+	margin:10px;
+	animation: rotate 1s linear infinite;
+}
  
  .container {
  border:3px solid;
