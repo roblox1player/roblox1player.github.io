@@ -44,7 +44,7 @@
  button {
     background: linear-gradient(var(--angle), #6a5acd, #483d8b); /* gradient background */
     border: none;                          /* remove default border */
-    color: white;                           /* text color */
+    color: black;                           /* text color */
     padding: 12px 24px;                     /* space inside button */
     font-size: 18px;                         /* text size */
     font-family: 'Montserrat', sans-serif;	/* match your font */
@@ -79,6 +79,7 @@ body {
 }
  
  h1 {
+	 color:black;
  font-size:35px;
  text-align:center;
  margin:30px auto;
